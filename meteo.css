@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'VT323';
+    background-image: url(img/star.png);
+    background-position: top center;
+    background-size: cover;
+  
+  }
+  
+  
+  .all-app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 15px 15px;
+  }
+  
+  header input {
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-bottom: 3px solid rgb(70, 206, 110);
+    border-radius: 5px 5px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #46ce6e;
+    font-size: 30px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+  }
+
+  
+  header input:focus {
+    background-color: rgba(200, 200, 200, 0.3);
+  }
+
+
+  ::placeholder {
+    font-family: 'VT323';
+  }
+
+  input[type='text'] {
+    font-family: 'VT323';
+  }
+  
+  main {
+    flex: 1 1 100%;
+    padding: 75px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .location .city {
+    font-size: 80px;
+    font-weight: 600;
+    color: #46ce6e;
+    margin-bottom: 10px;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .location .date {
+    color: #46ce6e;
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow: 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  .current .temp {
+    font-size: 100px;
+    color: #46ce6e;
+    font-weight: 700;
+    margin: 30px 0px;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .current .temp span{
+    font-weight: 500;
+  }
+  
+  .current .weather {
+    color: #46ce6e;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .current .hi-low {
+    color: #46ce6e;
+    font-size: 70px;
+    font-weight: 500;
+    word-spacing: 20px;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Mobile Styles */
+  @media only screen and (max-width: 400px) {
+    
+    header {
+      padding: 70px 15px 15px;
+    }
+    
+    main {
+      padding: 75px 25px 50px;
+    }
+
+    .location .city {
+      font-size: 70px;
+    }
+    
+    .location .date {
+      font-size: 25px;
+    }
+    
+    .current .temp {
+      font-size: 90px;
+    }
+
+    
+    .current .weather {
+      font-size: 40px;
+    }
+    
+    .current .hi-low {
+      font-size: 60px;
+    }
+  }
